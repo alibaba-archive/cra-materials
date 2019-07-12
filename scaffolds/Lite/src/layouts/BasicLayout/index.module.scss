@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  height: 100vh;
+  background: #eee;
+}
+
+.aside {
+  width: 240px;
+  background: #06152a;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 64px;
+  background: #fff;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
