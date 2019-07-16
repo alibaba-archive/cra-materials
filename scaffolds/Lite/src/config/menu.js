@@ -1,19 +1,4 @@
-const headerMenuConfig = [
-  {
-    name: 'feedback',
-    path: 'https://github.com/alibaba/ice',
-    external: true,
-    newWindow: true,
-  },
-  {
-    name: 'help',
-    path: 'https://alibaba.github.io/ice',
-    external: true,
-    newWindow: true,
-  },
-];
-
-const asideMenuConfig = [
+const sideNavConfig = [
   {
     name: 'Home',
     path: '/',
@@ -24,4 +9,4 @@ const asideMenuConfig = [
   },
 ];
 
-export { headerMenuConfig, asideMenuConfig };
+export { sideNavConfig };

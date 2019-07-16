@@ -1,11 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import logo from './logo.svg';
+import styles from './index.module.scss';
 
 export default function Home() {
   return (
-    <div>
-      <h2>Home Page</h2>
-      <Link to="/">Go to about page</Link>
+    <div className={styles.app}>
+      <div className={styles.appBody}>
+        <img src={logo} className={styles.appLogo} alt="logo" />
+        <a
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </div>
     </div>
   );
 }
