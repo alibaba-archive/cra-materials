@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../../public/favicon.png';
+import logo from './ice.png';
 import styles from './index.module.scss';
 
 export default function About() {

@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import styles from './index.module.scss';
 
 import Header from './components/Header';
-import SideNav from './components/SideNav';
+import Aside from './components/Aside';
 
 export default function BasicLayout ({ children }) {
-  const [displaySideNav, toggleSideNav] = useState(false);
+  const [displayAside, toggleAside] = useState(false);
 
-  const handleToggleClick = () => toggleSideNav(!displaySideNav);
+  const handleToggleClick = () => toggleAside(!displayAside);
 
   return (
     <div className={styles.container}>
@@ -15,7 +15,7 @@ export default function BasicLayout ({ children }) {
         <Header handleToggleClick={handleToggleClick}/>
       </div>
       <div>
-        { displaySideNav && <SideNav /> }
+        { displayAside && <Aside /> }
         <div>
           { children }
         </div>

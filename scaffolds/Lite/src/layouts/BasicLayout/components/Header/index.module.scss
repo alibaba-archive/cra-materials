@@ -3,9 +3,10 @@
   height: 4rem;
   position: fixed;
   background: black;
+  padding: 0 1rem;
   display: flex;
   align-items: center;
-  padding: 0 1rem;
+  justify-content: space-between;
 }
 
 .toggleButton {
@@ -24,4 +25,16 @@
   display: block;
   background: white;
   margin: 0.6rem 0;
+}
+
+.navItems {
+  display: flex; // default flex-direction is row
+}
+
+.navItem {
+  margin: 0 1rem;
+}
+
+.navItem a {
+  font-size: 1.2rem;
 }
