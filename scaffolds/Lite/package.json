@@ -24,11 +24,10 @@
     ]
   },
   "dependencies": {
-    "@alifd/next": "^1.10.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1"
+    "react-scripts": ">=3.0.1"
   },
   "publishConfig": {
     "access": "public"
@@ -49,8 +48,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/ice-lab/cra-materials/tree/master/scaffolds/Lite"
-  },
-  "devDependencies": {
-    "moment": "^2.24.0"
   }
 }
