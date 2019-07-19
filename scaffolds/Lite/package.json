@@ -8,7 +8,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "node_modules/eslint/bin/eslint.js src",
+    "lint": "eslint --cache --ext .js,.jsx src",
     "test": "react-scripts test"
   },
   "browserslist": {
@@ -25,7 +25,6 @@
   },
   "dependencies": {
     "@alifd/next": "^1.10.1",
-    "node-sass": "^4.12.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-router-dom": "^5.0.1",

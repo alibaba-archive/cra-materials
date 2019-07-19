@@ -6,7 +6,7 @@ import PageLoading from 'components/PageLoading';
 
 const RouteItem = (props) => {
   const { redirect, path: routePath, component, key } = props;
-  if (redirect) {
+  if (redirect)
     return (
       <Redirect
         exact
@@ -15,7 +15,7 @@ const RouteItem = (props) => {
         to={redirect}
       />
     );
-  }
+
   return (
     <Route
       key={key}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './index.module.scss';
+import './index.css';
 
 import Header from './components/Header';
 import Aside from './components/Aside';
@@ -10,15 +10,11 @@ export default function BasicLayout ({ children }) {
   const handleToggleClick = () => toggleAside(!displayAside);
 
   return (
-    <div className={styles.container}>
-      <div>
-        <Header handleToggleClick={handleToggleClick}/>
-      </div>
-      <div>
+    <div className="container">
+      <Header handleToggleClick={handleToggleClick}/>
+      <div className="main">
         { displayAside && <Aside /> }
-        <div>
-          { children }
-        </div>
+        { children }
       </div>
     </div>
   );

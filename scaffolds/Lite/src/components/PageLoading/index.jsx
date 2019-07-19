@@ -1,10 +1,9 @@
 import React from 'react';
-import { Loading } from '@alifd/next';
 
-import styles from './index.module.scss';
+import styles from './index.module.css';
 
 export default () => (
   <div className={styles.container}>
-    <Loading />
+    Loading
   </div>
 );

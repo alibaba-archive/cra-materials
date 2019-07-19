@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './index.module.scss';
+import styles from './index.module.css';
 import { headerMenuConfig } from 'config/menu.js';
 
 function NavLink(props) {
@@ -14,7 +14,9 @@ function NavLink(props) {
     linkProps.to = props.path;
   }
 
-  return <Link {...linkProps}>{props.name}</Link>;
+  return linkProps.to
+    ? <Link {...linkProps}>{props.name}</Link>
+    : <a {...linkProps}>{props.name}</a>;
 }
 
 export default function Header(props) {
