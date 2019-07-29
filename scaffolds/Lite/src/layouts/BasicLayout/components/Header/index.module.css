@@ -1,0 +1,46 @@
+.header {
+  width: 100%;
+  height: 4rem;
+  grid-row: 1;
+  position: fixed;
+  background: black;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggleButton {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.toggleButton:focus {
+  outline: none;
+}
+
+.toggleButtonBar {
+  height: 0.2rem;
+  display: block;
+  background: white;
+  margin: 0.6rem 0;
+}
+
+.navItems {
+  display: flex; /* default flex-direction is row */
+  margin: 0;
+  padding: 0 20px;
+}
+
+.navItem {
+  margin: 0 1rem;
+}
+
+.navItem a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}

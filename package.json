@@ -4,12 +4,13 @@
   "description": "This is a ice material project",
   "author": "",
   "scripts": {
-    "deploy": "npm run generate && npm run sync",
+    "upload-oss": "node scripts/upload-oss.js",
     "generate": "idev generate",
-    "sync": "idev sync",
+    "generate:ci": "LOG_LEVEL=verbose REGISTRY=https://registry.npmjs.com idev generate",
     "lint": "npm run eslint && npm run stylelint",
     "eslint": "eslint --cache --ext .js,.jsx ./",
-    "stylelint": "stylelint ./**/*.scss"
+    "stylelint": "stylelint ./**/*.css",
+    "deploy": "idev -V && npm run generate:ci && npm run upload-oss"
   },
   "files": [
     "build"
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "@ice/spec": "^0.1.1",
+    "ali-oss": "^6.1.1",
     "eslint": "^6.0.1",
     "husky": "^3.0.0",
     "stylelint": "^10.1.0"

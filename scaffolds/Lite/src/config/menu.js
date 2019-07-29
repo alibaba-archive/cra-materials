@@ -1,13 +1,13 @@
 const headerMenuConfig = [
   {
-    name: 'feedback',
-    path: 'https://github.com/alibaba/ice',
+    name: 'GitHub Issues',
+    path: 'https://github.com/alibaba/ice/issues',
     external: true,
     newWindow: true,
   },
   {
-    name: 'help',
-    path: 'https://alibaba.github.io/ice',
+    name: 'Contribute',
+    path: 'https://github.com/alibaba/ice/blob/master/.github/CONTRIBUTING.md',
     external: true,
     newWindow: true,
   },
