@@ -1,6 +1,6 @@
 {
   "name": "@icedesign/cra-scaffold",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create react app scaffold for iceworks",
   "engines": {
     "node": ">=8.0.0"
@@ -43,10 +43,7 @@
     "builder": "cra",
     "name": "create-react-app",
     "title": "create-react-app scaffold",
-    "category": "lite",
-    "categories": [
-      "通用"
-    ]
+    "screenshot": "//img.alicdn.com/tfs/TB1hvbYbQL0gK0jSZFtXXXQCXXa-2866-1522.png"
   },
   "repository": {
     "type": "git",

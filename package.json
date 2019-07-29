@@ -27,6 +27,10 @@
     "husky": "^3.0.0",
     "stylelint": "^10.1.0"
   },
+  "iceworks": {
+    "type": "cra",
+    "adapter": "adapter-react-v3"
+  },
   "materialConfig": {
     "template": "@icedesign/ice-react-material-template",
     "type": "react"
