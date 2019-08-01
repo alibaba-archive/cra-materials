@@ -1,8 +1,6 @@
 /* eslint arrow-body-style:0 */
 const oss = require('ali-oss');
 const path = require('path');
-const fs = require('fs');
-const pkgData = require('../package.json');
 
 const bucket = 'iceworks';
 const accessKeyId = process.env.ACCESS_KEY_ID;
