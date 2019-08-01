@@ -1,18 +1,18 @@
 .nav {
   position: fixed;
-  background: black;
   width: 15%;
   height: 100%;
+  background: black;
 }
 
 .navItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .navItem {
@@ -20,8 +20,8 @@
 }
 
 .navItem a {
-  text-decoration: none;
   color: white;
   font-weight: bold;
   font-size: 1.5rem;
+  text-decoration: none;
 }

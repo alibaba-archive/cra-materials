@@ -1,13 +1,13 @@
 .header {
-  width: 100%;
-  height: 4rem;
-  grid-row: 1;
   position: fixed;
-  background: black;
-  padding: 0 1rem;
   display: flex;
+  grid-row: 1;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+  padding: 0 1rem;
+  background: black;
 }
 
 .toggleButton {
@@ -22,10 +22,10 @@
 }
 
 .toggleButtonBar {
-  height: 0.2rem;
   display: block;
-  background: white;
+  height: 0.2rem;
   margin: 0.6rem 0;
+  background: white;
 }
 
 .navItems {
@@ -39,8 +39,8 @@
 }
 
 .navItem a {
-  text-decoration: none;
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
+  text-decoration: none;
 }

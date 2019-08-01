@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './index.module.css';
 import { headerMenuConfig } from 'config/menu.js';
+import styles from './index.module.css';
 
 function NavLink(props) {
   const linkProps = {};
