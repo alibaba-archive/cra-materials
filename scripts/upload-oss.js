@@ -2,14 +2,13 @@
 const oss = require('ali-oss');
 const path = require('path');
 const fs = require('fs');
-const scaffolds = require('./scaffolds');
 const pkgData = require('../package.json');
 
 const bucket = 'iceworks';
 const accessKeyId = process.env.ACCESS_KEY_ID;
 const accessKeySecret = process.env.ACCESS_KEY_SECRET;
 const branch = process.env.TRAVIS_BRANCH;
-const dirPath = pkgData.kitVersion === '3.x' ? 'materials/' : '/';
+const dirPath = 'materials/';
 let assetsPath;
 
 if (['master'].indexOf(branch) === -1) {

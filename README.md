@@ -1,37 +1,29 @@
-# 自定义物料初始模板
+# CRA Materials
 
-## 简介
+Materials for Create React App. Make CRA use in iceworks.
 
-用于自定义物料，支持自定义区块、布局、模板
+## Install
 
-## 使用
+Install iceworks CLI tool:
 
-#### 安装依赖
-
-```
-$ npm install
+```bash
+$ npm i -g iceworks
 ```
 
-#### 区块预览
+## Usage
 
-```
-$ cd blocks/ExampleBlock
-$ npm install
-$ npm run start
-```
+Start iceworks:
 
-#### 模板预览
-
-```
-$ cd scaffolds/ExampleScaffold
-$ npm install
-$ npm run start
+```bash
+$ iceworks  # will open http://127.0.0.1:8000 in browser
 ```
 
-## 添加物料
+Add CRA materials, go to Materials Tab and click Add Button:
 
-```
-# 根据提示自定义添加
-# 需要到根目录下添加
-$ ice-devtools add
-```
+![](https://img.alicdn.com/tfs/TB1o5j2bYr1gK0jSZR0XXbP8XXa-2872-1634.jpg)
+
+Fill out the form. CRA materials url `http://ice.alicdn.com/assets/materials/cra-materials.json`
+
+![](https://img.alicdn.com/tfs/TB1btzWbWL7gK0jSZFBXXXZZpXa-1460-654.jpg)
+
+Finally you can use iceworks for developing CRA project. Enjoy it!
