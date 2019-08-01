@@ -1,15 +1,28 @@
 {
   "name": "@icedesign/cra-scaffold",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Create react app scaffold for iceworks",
   "engines": {
     "node": ">=8.0.0"
   },
+  "files": [
+    "src/",
+    "build/",
+    "public/",
+    "tests/",
+    "_gitignore",
+    "_editorconfig",
+    "_eslintignore",
+    "_eslintrc",
+    "jsconfig.json",
+    "screenshot.png"
+  ],
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint --cache --ext .js,.jsx src",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "prepublishOnly": "npm run build"
   },
   "browserslist": {
     "production": [
@@ -24,12 +37,13 @@
     ]
   },
   "dependencies": {
-    "moment": "^2.24.0",
-    "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-router-dom": "^5.0.1",
+    "react-router-dom": "^5.0.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0",
     "react-scripts": ">=3.0.1"
   },
   "publishConfig": {
